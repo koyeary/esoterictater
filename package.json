@@ -1,0 +1,25 @@
+{
+  "name": "esoterictater",
+  "version": "1.0.0",
+  "description": "AI Powered Tarot Card Reader",
+  "main": "server.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "python server.py",
+    "dev": "concurrently \"python server.py\" \"npm run client\"",
+    "client": "cd client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koyeary/esoterictater.git"
+  },
+  "author": "Kat Yeary-Rantala and Lauren Rantala-Yeary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koyeary/esoterictater/issues"
+  },
+  "homepage": "https://github.com/koyeary/esoterictater#readme",
+  "dependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
