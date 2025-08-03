@@ -13,15 +13,6 @@ function App() {
     config: { duration: 1500 },
   });
 
-  const pickACard = ["P", "I", "C", "K", "A", "C", "A", "R", "D"];
-  const transitions = useTransition(pickACard, {
-    keys: (item) => item,
-    from: { opacity: 0, transform: "translateY(-20px)" },
-    enter: { opacity: 1, transform: "translateY(0px)" },
-    leave: { opacity: 0, transform: "translateY(20px)" },
-    config: { duration: 500 },
-  });
-
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * IMAGE_URLS.length);
     if (randomIndex === 0) {
