@@ -1,10 +1,8 @@
-export function debounce<T extends (...args: any[]) => any>(
-  fn: T,
-  delay: number
-): T {
-  let timeout: ReturnType<typeof setTimeout>;
-  return function (...args: Parameters<T>) {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => fn(...args), delay);
-  } as T;
-}
+export const formatDate = (date: Date): string => {
+  const options: Intl.DateTimeFormatOptions = {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+  return date.toLocaleDateString(undefined, options);
+};

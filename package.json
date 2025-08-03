@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/koyeary/esoterictater#readme",
   "dependencies": {
+    "@tanstack/react-query": "^5.83.0",
     "concurrently": "^9.2.0"
   }
 }
